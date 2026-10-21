@@ -29,7 +29,7 @@ LAYERS = {
     'earthquake-hazard-zones': ('EarthquakeHazardZones', '98259e9b-480f-401f-b715-f52d0c17cb72'),
     'corrosion-areas': ('CorrosionEnvironmentAreas', '00077ae8-57b2-40b7-b4b5-491872163d70'),
 }
-UA = {'User-Agent': 'AlreadyOpen sa-planning (https://github.com/milleleaf/sa-planning)'}
+UA = {'User-Agent': 'Milleleaf sa-planning (https://github.com/milleleaf/sa-planning)'}
 REPO = 'milleleaf/sa-planning'
 MINZOOM, MAXZOOM = 4, 14
 url = lambda layer: f'{BASE}{LAYERS[layer][0]}_geojson.zip'

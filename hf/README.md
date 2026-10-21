@@ -14,7 +14,7 @@ tags:
 
 Statewide planning and land layers published by the Department for Housing and Urban Development on Data.SA, as GeoParquet
 and vector tiles, checked weekly and rebuilt when a source changes by
-[AlreadyOpen/sa-planning](https://github.com/milleleaf/sa-planning). Every feature and every field of each source is kept.
+[milleleaf/sa-planning](https://github.com/milleleaf/sa-planning). Every feature and every field of each source is kept.
 
 | Layer | Source | Holds |
 |---|---|---|

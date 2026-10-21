@@ -16,7 +16,7 @@ LAYERS = _i.get('layers', [])
 DATASET_FILES = ['index.json'] + [f'{l}.parquet' for l in LAYERS]
 BUCKET_FILES = ['index.json'] + [f'{l}.pmtiles' for l in LAYERS]            # the map reads these
 KAGGLE_FILES = [p for l in LAYERS for p in _i.get('gda94', {}).get(l, [])]   # GDA94 copies: Kaggle only (kaggle_mirror.py)
-KAGGLE = ('helenkwok/sa-planning', 'AlreadyOpen: South Australia planning')     # mirrored by kaggle_mirror.py (title 6-50 chars)
+KAGGLE = ('helenkwok/sa-planning', 'Milleleaf: South Australia planning')     # mirrored by kaggle_mirror.py (title 6-50 chars)
 
 def main():
     if not LAYERS:
