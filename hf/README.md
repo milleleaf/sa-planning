@@ -14,7 +14,7 @@ tags:
 
 Statewide planning and land layers published by the Department for Housing and Urban Development on Data.SA, as GeoParquet
 and vector tiles, checked weekly and rebuilt when a source changes by
-[AlreadyOpen/sa-planning](https://github.com/AlreadyOpen/sa-planning). Every feature and every field of each source is kept.
+[AlreadyOpen/sa-planning](https://github.com/milleleaf/sa-planning). Every feature and every field of each source is kept.
 
 | Layer | Source | Holds |
 |---|---|---|
@@ -31,7 +31,7 @@ and vector tiles, checked weekly and rebuilt when a source changes by
 Per layer:
 
 - **`<layer>.parquet`** (in this dataset): GeoParquet, every feature, every field as published, geometry in `geom`.
-- **`<layer>.pmtiles`** (on the [bucket](https://huggingface.co/buckets/alreadyopen/sa-planning), read by browsers): vector
+- **`<layer>.pmtiles`** (on the [bucket](https://huggingface.co/buckets/milleleaf/sa-planning), read by browsers): vector
   tiles, one layer named after the file, zooms 4 to 14, every field plus `fid` (the feature's row number in the Parquet file,
   from 0). **Zoom 14 holds every feature** at full detail: no feature or tile size limit, no tiny-polygon reduction, no
   simplification. Zooms 4 to 13 may leave out features in dense areas and simplify shapes, so those tiles stay small. A

@@ -9,7 +9,7 @@ import json, os
 from huggingface_hub import CommitOperationAdd, HfApi, batch_bucket_files, create_bucket
 import manifest, sources
 
-REPO = 'alreadyopen/sa-planning'
+REPO = 'milleleaf/sa-planning'
 _idx = os.path.join(sources.OUT, 'index.json')
 _i = json.load(open(_idx)) if os.path.exists(_idx) else {}
 LAYERS = _i.get('layers', [])
